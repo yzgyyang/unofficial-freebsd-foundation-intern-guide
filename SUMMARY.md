@@ -34,3 +34,5 @@
 * [People](part5/people.md)
 
 ## Part 9 - Misc
+
+* [Work from home](part9/remote.md)
