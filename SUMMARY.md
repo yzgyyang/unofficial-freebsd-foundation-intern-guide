@@ -6,7 +6,7 @@
 
 ## Part 1 - Setting up
 
-* [System](part1/system.md)
+* [Install the Base System](part1/system.md)
 * [Setup Development Environment](part1/environment.md)
 * [Accounts](part1/accounts.md)
 
