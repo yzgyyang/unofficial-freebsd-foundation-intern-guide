@@ -35,4 +35,4 @@
 
 ## Part 9 - Misc
 
-* [Work from home](part9/remote.md)
+* [Working from home](part9/remote.md)
