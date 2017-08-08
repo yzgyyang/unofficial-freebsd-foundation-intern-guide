@@ -7,7 +7,7 @@
 ## Part 1 - Setting up
 
 * [System](part1/system.md)
-* [Environment](part1/environment.md)
+* [Setup Development Environment](part1/environment.md)
 * [Accounts](part1/accounts.md)
 
 ## Part 2 - FreeBSD 101
