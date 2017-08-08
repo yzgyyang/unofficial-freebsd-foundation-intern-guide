@@ -8,7 +8,7 @@ FreeBSD-12.0-CURRENT-amd64-20170717-r321072-memstick.img.xz
 
 ## Flash image to USB stick
 
-Insert a USB stick and flash the image using [dd](https://www.freebsd.org/cgi/man.cgi?dd(1)):
+Insert a USB stick and flash the image using [dd](https://www.freebsd.org/cgi/man.cgi?dd(1):
 ```
 unxz FreeBSD-12.0-CURRENT-amd64-20170717-r321072-memstick.img.xz
 dd if=FreeBSD-12.0-CURRENT-amd64-20170717-r321072-memstick.img of=/dev/[usually da5, but may differ] bs=8m
