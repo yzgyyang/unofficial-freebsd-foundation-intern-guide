@@ -4,20 +4,21 @@ IRC is a crucial way of communicating in the open source world.
 
 ## Softwares / Web Interfaces
 
-irssi
-
-pidgin
-
-web
+* irssi
+* pidgin
+* web
 
 ## Most Used Channels
 
+Note: All of the following channels are on irc.efnet.org
+
 ### Foundation Channels
 
-ffstaff
+* ffstaff
 
 ### Other FreeBSD Channels
 
-freebsd-doc
-freebsd-arm
-bsdmips
+* bsddev
+* freebsd-doc
+* freebsd-arm
+* bsdmips

@@ -29,19 +29,24 @@ Check if the upstream has been added correctly:
 git remote -v
 ```
 
-Then, `git merge` or `git rebase` can be used to keep your own repositories updated.
-
-Here shows how to use `git merge`. `git rebase` should be similar.
+Then, to keep your local repository updated with FreeBSD CURRENT, run the following while in the master branch:
 ```
-git fetch upstream master
-git merge upstream/master
-{Possibly create a merge commit automatically}
+git pull upstream master
 ```
+Note: due to the size of the repositories and the large number of commits that arrive in CURRENT every day, updating your local repository could cause a large increase in the time it takes to run a full rebuild. This is especially true for the `freebsd-src` repository.
 
 Alternatively, clone the repositories directly to local, but your changes will be harder to keep track of in the future.
 
 ### Start Your Git Workflow
 
 Use your own Git workflow on your own repositories, as only the final patch will be submitted.
+The following was Siva's workflow for working on one patch from end to end in the `freebsd-src` repository:
+
+1. Checkout a new local branch off of master. NOTE: it is recommended *not* to update the local master branch with FreeBSD CURRENT before doing this because it will minimize the time taken to rebuild after changes are made to the new branch.
+2. Make changes required for the patch to work, rebuilding the project as necessary.
+3. Submit the patch for review, making subsequent commits as needed
+4. Determine whether your changes conflict with any changes made to FreeBSD CURRENT after you first made your local branch.
+If they do (or might) conflict, update your master branch with FreeBSD CURRENT and rebase your new branch against the updated master.
+5. (optional): Push your branch to your local fork, signifying that the change is ready to commit.
 
 When submitting a patch, use `git diff` to create a differential revision. More details [here](part4/diff.md).
