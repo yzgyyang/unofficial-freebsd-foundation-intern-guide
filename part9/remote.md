@@ -9,7 +9,7 @@ ssh -p [port] [username]@noblerock.zapto.org
 
 ## SSH with tmux(1)
 
-Consider using [tmux(1)](https://www.freebsd.org/cgi/man.cgi?query=tmux), so that you can resume the previous working environment in a sec. In brief, after you've established SSH connection:
+Consider using [tmux(1)](https://www.freebsd.org/cgi/man.cgi?query=tmux), so that you can resume the previous working environment instantly. First, before SSH'ing to your machine, you must have tmux already running. After you've established SSH connection run the following:
 ```
 tmux attach
 ```
